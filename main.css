@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+   
+}
+
+:root {
+    --black-color: black;
+    --text-color: black;
+    --bg-color: white;
+    --orange-color: orange;
+}
+
+.section-heading {
+    font-size: medium;
+    font-weight: 700;
+    color: var(--black-color);
+}
+nav {
+    
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--black-color);
+    position: sticky;
+    top: 0;
+    z-index: 10000000; 
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+nav > div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+nav > div:nth-child(2) > h2 {
+    font-weight: 450;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:black;
+}
+
+nav > div:nth-child(2) > h2:first-child {
+    color: black;
+}
+
+
+nav > div:nth-child(3) {
+    width: 13%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav > div:nth-child(3) > button {
+font-size: 0.9rem;
+padding: 0.6rem 1rem ;
+border-radius: 0.4rem;
+font-weight: 600;
+}
+
+nav > div:nth-child(3) > button:nth-child(1) {
+    background-color: transparent;
+    color: var(--orange-color);
+    border: none;
+}
+
+nav > div:nth-child(3) > button:nth-child(2) {
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    color: white;
+}
+
+nav > div:nth-child(3) > button:nth-child(1):hover, 
+nav > div:nth-child(3) > button:nth-child(2):hover 
+{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    color: white;
+}
+.highlight {
+    color: var(--orange-color);
+}
+
+/* about us */
+
+#about-us {
+    position: relative;
+    top: 4rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+#about-us > div {
+    width: 48%;
+    padding: 5rem;
+}
+
+#about-us > div > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;  
+}
+#about-us > div:nth-child(1) {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#about-us > div > h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#about-us > div > p {
+    color: grey;
+   text-align: justify; 
+   font-size: large;
+   line-height: 35px;
+}
+
+#about-us > div > span > button {
+    background-color: transparent;
+    color: var(--orange-color);
+    border: 2px solid var(--orange-color); 
+    padding: 1rem;
+}
+
+#about-us > div > span > button:hover {
+    background-color: var(--orange-color);
+    color: white;
+    border: 2px solid var(--orange-color); 
+    padding: 1rem;
+}
+
+.zigzag-section {
+    background-image: url('./images/about.jpg'); 
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    position: relative;
+    border-radius: 50%;
+    border:70px solid white;
+}
+
+.zigzag-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    position: relative;
+}
+
+.zigzag-box.left {
+    justify-content: flex-start;
+    margin-left: 0;
+    align-self: flex-start;
+    transform: translateX(-50px);
+}
+
+.zigzag-box.right {
+    justify-content: flex-end;
+    margin-left: auto;
+    align-self: flex-end;
+    transform: translateX(200px);
+}
+
+.zigzag-box i {
+    font-size: 30px;
+    color: var(--orange-color);
+    margin-right: 20px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+  #drop-down-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
+  }
+  
+
+  .dropdown-container div {
+    display: inline-block; 
+    
+  }
+  
+ 
+  select {
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+  }
+
+  .dropdown-container select option {
+    font-weight: 600;
+  }
+  
+  .dropdown-container p {
+    font-size: 12px; 
+    color: var(--text-color);
+    margin-top: 10px; 
+    
+  }
+  
+ 
+   .custom-button > button {
+    padding: 10px 20px;
+    background-color:var(--orange-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  } 
+
+  /* things to do */
+
+#things-to-do {
+    position: relative;
+    top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#things-to-do > div {
+    text-align: center;
+
+}
+
+#things-to-do > div > h2 {
+    margin-bottom: 0.4rem;
+}
+#things-to-do > div:first-child {
+    margin-bottom: 4rem;
+}
+
+#things-to-do > div:first-child > h3 {
+    margin-bottom: 2rem;
+    font-size:2rem;
+}
+
+#things-to-do > div:first-child > p {
+    color: grey;
+}
+
+#things-to-do > div:last-child {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#things-to-do > div:last-child > div {
+    width: 23.5%;
+    
+    padding-bottom: 1.6rem ;
+    text-align: left;
+}
+
+#things-to-do > div:last-child > div > img {
+    width: 25%;
+    height: 15vh;
+    object-fit:contain;
+    margin-bottom: 1rem;
+    margin-right: 8rem;
+}
+
+#things-to-do > div:last-child > div > h4 {
+    margin-bottom: 0.6rem;
+}
+
+
+#things-to-do > div:last-child > div > p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: grey;
+}
+
+/* Deals and Discounts */
+
+#deals-discounts {
+    position: relative;
+    top: 4rem;
+    margin-bottom: 4rem; 
+    
+}
+
+
+#deals-discounts > div {
+    text-align: center;
+}
+
+#deals-discounts > div:first-child {
+    margin-bottom: 4rem;
+}
+
+#deals-discounts > div:first-child > h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#deals-discounts > div:first-child > p {
+    color: grey;
+}
+
+
+#deals-discounts > div:nth-child(2) {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#deals-discounts > div:nth-child(2) > div {
+    width: 23.5%;
+    border: 1px solid rgb(206, 206, 206);
+    padding-bottom: 1.6rem ;
+    border-radius: 10px;
+}
+
+#deals-discounts > div:nth-child(2) > div > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius:10px;
+}
+
+#deals-discounts > div:nth-child(2) > div > .information {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+#deals-discounts > div:nth-child(2) > div > .information > h5 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}
+#deals-discounts > div:nth-child(2) > div > .information > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+}
+
+#deals-discounts > div:nth-child(2) > div > .information > span {
+    display: flex;
+        align-items: center;
+        gap: 0.4rem;
+}
+#deals-discounts > div:nth-child(2) > div > .information > .info-1 > i {
+    color: gold;
+}
+#deals-discounts > div:nth-child(2) > div > .information > .info-2 > i {
+    color: grey;
+}
+#deals-discounts > div:nth-child(2) > div > .information > p > .price-detail {
+    color: red;
+    padding: 0.2rem;
+    background-color: rgba(255, 0, 0, 0.096);
+}
+
+
+#deals-discounts > div:last-child > .left-button,
+#deals-discounts > div:last-child > .right-button
+{
+
+  background-color: transparent;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-top:2.5rem;
+    margin-right: 1rem;
+    height: 6vh;
+    width:3vw;
+    font-size: 15px;
+    
+}
+
+#deals-discounts > div:last-child > .right-button
+{
+
+  background-color: var(--orange-color);
+    color: white;
+    border: 2px solid var(--orange-color); 
+    
+}
+
+#deals-discounts > div:last-child > .left-button:hover,
+#deals-discounts > div:last-child > .right-button:hover, 
+#deals-discounts > div:last-child > .left-button:active,
+#deals-discounts > div:last-child > .right-button:active
+
+{
+
+  background-color: var(--orange-color);
+    color: white;
+    border:none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-top:2.5rem;
+    margin-right: 1rem;
+}
+
+/* Vacation */
+
+#vacation {
+    position: relative;
+    top: 4rem;
+    margin-bottom: 4rem; 
+    
+}
+
+
+#vacation > div {
+    text-align: center;
+}
+
+#vacation > div:first-child {
+    margin-bottom: 0;
+}
+
+#vacation > div:first-child > h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#vacation > div:first-child > p {
+    color: grey;
+}
+
+#vacation > div:nth-child(2) {
+    text-align: right;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    margin-top: 0;
+}
+
+#vacation > div:nth-child(2) > .left-button,
+#vacation > div:nth-child(2) > .right-button
+{
+
+  background-color: transparent;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-top:1rem;
+    margin-right: 1rem;
+    height: 6vh;
+    width:3vw;
+    font-size: 15px;
+    
+}
+
+#vacation > div:nth-child(2) > .right-button {
+background-color: var(--orange-color);
+color: white;
+border: 2px solid var(--orange-color); 
+}
+
+#vacation > div:nth-child(2) > .left-button:hover,
+#vacation > div:nth-child(2) > .right-button:hover, 
+#vacation > div:nth-child(2) > .left-button:active,
+#vacation > div:nth-child(2) > .right-button:active
+
+{
+
+  background-color: var(--orange-color);
+    color: white;
+    border:none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-top:2.5rem;
+    margin-right: 1rem;
+}
+
+#vacation > div:nth-child(3) {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#vacation > div:nth-child(3) > div {
+    width: 30%;
+    border: 1px solid rgb(206, 206, 206);
+    padding-bottom: 1.6rem ;
+    border-radius: 10px;
+}
+
+#vacation > div:nth-child(3) > div > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+ .line-1-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem; 
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+
+}
+
+.line-1-inline h5 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}
+.line-1-inline p {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--orange-color)
+}
+
+
+.line-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; 
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.line-2 span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; 
+}
+
+
+.line-2 i {
+    color: var(--orange-color);
+}
+
+.line-2 p {
+    color:grey;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* Testimonial */
+
+#Testimonial {
+    position: relative;
+    top: 4rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+#Testimonial > div {
+    width: 48%;
+    padding: 5rem;
+}
+
+#Testimonial > div > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;  
+}
+#Testimonial > div:nth-child(1) {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+#Testimonial > div > .test-button > .button-one,
+#Testimonial > div > .test-button > .button-two {
+
+    background-color: transparent;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 1rem;
+    height: 6vh;
+    width:3vw;
+    font-size: 15px;
+
+}
+#Testimonial > div > .test-button > .button-two {
+background-color: var(--orange-color);
+color: white;
+border: 2px solid var(--orange-color); 
+}
+#Testimonial > div > .test-button > .button-one:hover,
+#Testimonial > div > .test-button > .button-two:hover,
+#Testimonial > div > .test-button > .button-one:active,
+#Testimonial > div > .test-button > .button-two:active
+{
+
+    background-color: var(--orange-color);
+      color: white;
+      border:none;
+      border-radius: 50%;
+      padding: 0.5rem;
+      margin-top:1rem;
+      margin-right: 1rem;
+  }
+  
+#Testimonial > div:nth-child(2) > h6 {
+    font-size:1rem;
+    font-weight: 500;
+}
+
+#Testimonial > div:nth-child(2) > h5 {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: var(--black-color);
+}
+
+#Testimonial > div:nth-child(2) > p {
+    font-size:1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: grey;
+    margin-top: 0.5rem;
+}
+
+#Testimonial > div > h3 {
+    font-size: 3rem;
+    
+}
+#Testimonial > div:nth-child(2) {
+    text-align: left;
+}
+#Testimonial > div:nth-child(2) > img {
+    width: 25%;
+    height: 12vh;
+    object-fit:contain;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    border-radius: 50%;
+    
+}
+
+/* Blog - Latest Updates  */
+
+#blog {
+    position: relative;
+    top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#blog > div {
+    text-align: center;
+
+}
+
+#blog > div > h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+#blog > div:first-child {
+    margin-bottom: 4rem;
+}
+#blog > div:nth-child(2) {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#blog > div:nth-child(2) > div {
+    width: 23.5%;
+    padding-bottom: 1.6rem ;
+}
+
+#blog > div:nth-child(2) > div > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#blog > div:nth-child(2) > div > h4 {
+    margin-bottom: 0.6rem;
+}
+
+#blog > div:nth-child(2) > div > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.circle {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.circle i {
+    font-size: 18px;
+    color: grey; 
+}
+
+.circle span > i {
+    font-size: 26px;
+    background-color: var(--orange-color);
+    color: var(--orange-color);
+    border-radius: 50%;
+}
+
+ /* contact-us */
+
+ #contact-us {
+    position: relative;
+    top: 4rem;           
+    padding: 40px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-us > div {
+    height: 45vh;
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+
+#contact-us > div > h2 {
+    margin-bottom: 0.4rem;  
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+#contact-us > div > h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+
+    font-weight: 600;
+    font-size: 3rem;
+} 
+
+.email-subscribe-box {
+    display: inline-block;  
+    margin-top: 20px;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+
+.email-subscribe-box input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+
+.email-subscribe-box input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.email-subscribe-box input[type="email"]:focus,
+.email-subscribe-box input[type="submit"]:hover {
+    outline: none;
+    background-color: var(--orange-color);
+    color: white;
+}
+
+/* footer */
+footer {
+    position: relative;
+    top: 4rem;
+    padding: 1rem 1rem;
+    color: grey;
+    font-size: large;
+}
+footer > div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer > hr {
+    margin-top: 1rem;
+}
+
+footer > div p {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+footer > div h4 {
+   color: var(--black-color);
+   padding: 0.5rem;
+   text-align: left;
+} 
+
+
+.social-icons {
+    display: flex;
+    gap: 1rem; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-left:0.5rem;
+}
+
+.social-icons i {
+    font-size: 16px; 
+    color: grey; 
+    border-radius: 50%;
+    border: 1px solid grey;
+    height:5vh;
+    width:2.5vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.social-icons i:hover {
+    color: white; 
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+    border-radius: 50%;
+}
+
+.social-icons > span > i {
+    color: white; 
+    border-radius: 50%;
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+}
+
+ 
