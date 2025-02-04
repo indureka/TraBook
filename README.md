@@ -13,8 +13,8 @@ TraBook is a modern, responsive landing page built with HTML5 and CSS3. This pro
 2. CSS3: Styling for the layout and animations.
 3. Responsive Design: Utilized CSS Flexbox and Grid for a mobile-friendly layout.
 
-##Installation
+## Installation
 Clone or download the repository. Open the index.html file in your preferred browser to see the landing page.
 
-##License
+## License
 This project is open-source and free to use. You can customize the content and design to fit your needs.
