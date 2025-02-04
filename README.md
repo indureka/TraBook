@@ -1,5 +1,5 @@
 ## TraBook - Responsive Landing Page
-## TraBook is a modern, responsive landing page built with HTML5 and CSS3. This project features a sleek, clean, and minimalistic design inspired by modern web design templates. It's perfect for showcasing portfolios, products, or business services.
+TraBook is a modern, responsive landing page built with HTML5 and CSS3. This project features a sleek, clean, and minimalistic design inspired by modern web design templates. It's perfect for showcasing portfolios, products, or business services.
 
 ## Features
 1. Responsive Design: Optimized for various screen sizes, ensuring a seamless experience on both mobile and desktop.
